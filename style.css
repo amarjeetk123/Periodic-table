@@ -13,12 +13,18 @@ main{
     
 }
 .red{
-    background-color: red;
+    background-color: rgb(234, 58, 58);
 }
 .yellow{
     background-color: yellow;
 }
-.red , .yellow{
+.blue{
+    background-color: rgb(120, 191, 230);
+}
+.green{
+    background-color: green;
+}
+.red , .yellow , .blue, .green{
     width: 50px;
     height: 50px;
     border: 1px solid #000000;
@@ -30,14 +36,16 @@ main{
 h1,h2{
     font-size: 20px;
 }
-.first-row , .second-row{
-    width: 80vw;
+.first-row , .second-row , .third-row{
     display: flex;
     justify-content: space-between;
 }
-.left , .right{
+.first-row{
+    margin-bottom: 5px;
+}
+.left , .right {
     display: flex;
-    gap: 5px;
+    gap: 20px;
     margin: 5px 0px;
 }
 .number-row{
@@ -54,3 +62,19 @@ h3{
     margin-left: -50px;
     font-size: 20px;
 }
+ .fourth-row , .fifth-row ,.sixth-row , .seventh-row{
+    display: flex;
+    justify-content: space-between;
+ }
+ .middle{
+    display: flex;
+   gap: 20px;
+    align-items: center;
+    margin: 0px 20px;
+ }
+ .second-last-row , .last-row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5px;
+ }
