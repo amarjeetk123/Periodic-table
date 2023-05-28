@@ -7,6 +7,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100vh;
 }
 main{
     color: #000000;
@@ -24,7 +25,7 @@ main{
 .green{
     background-color: green;
 }
-.red , .yellow , .blue, .green{
+.red , .yellow , .blue, .green, .number-row h3 {
     width: 50px;
     height: 50px;
     border: 1px solid #000000;
@@ -48,12 +49,7 @@ h1,h2{
     gap: 20px;
     margin: 5px 0px;
 }
-.number-row{
-    display: flex;
-    width: 80vw;
-    justify-content: space-between;
-    align-items: center;
-}
+
 h3{
     text-align: center;
 }
@@ -62,9 +58,13 @@ h3{
     margin-left: -50px;
     font-size: 20px;
 }
- .fourth-row , .fifth-row ,.sixth-row , .seventh-row{
+ .fourth-row , .fifth-row ,.sixth-row , .seventh-row, .number-row {
     display: flex;
     justify-content: space-between;
+ }
+
+ .number-row h3{
+border: none;
  }
  .middle{
     display: flex;
@@ -77,4 +77,33 @@ h3{
     justify-content: center;
     gap: 20px;
     margin-top: 5px;
+ }
+
+.first-arrow-grp{
+    width: 65px;
+    display: flex;
+ align-items: center;
+
+}
+ .vertical-number{
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    position: absolute;
+    margin-left: -70px;
+    margin-top: 5px;
+ }
+ .vertical-number i{
+   font-size: 15px;
+ }
+ .vertical-number :not(:first-child){
+   display: flex;
+   justify-content: center;
+ }
+ .vertical-number h1{
+   height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
  }
